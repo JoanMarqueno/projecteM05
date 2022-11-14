@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Titol Formulari</title>
+<style> 
+
+body{
+	background-color: grey;
+	box-sizing: border-box;	
+ 	}
+form{
+  margin: 0 auto;
+  width: 580px;
+  padding: 25px; 
+  background-color: black}
+
+h3{
+	color:red;
+}
+.p1{
+	font-family: "papyrus"
+}
+
+form{
+	color:white;
+}
+
+input[type=text], input[type=password] {
+  border: none;
+  border-bottom: 3px solid red;
+  background-color: black;
+  color: white;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<form  method="post" action="formulario.php" enctype="multipart/form-data">
+<h3 class="p1">EVENTO DE TERROR HORRORLAND</h3>
+
+<h3>Registrate para obtener tu acreditación</h3>
+
+
+Nombre  &nbsp;
+<input type="text" name="nombre" value="" size="20" maxlength="20">
+<br><br>
+Primer apellido &nbsp;
+<input type="text" name="apellido" value="" size="20" maxlength="30">
+<br><br>		
+
+Segundo Apellido &nbsp;
+<input type="text" name="apellido" value="" size="20" maxlength="30">
+
+<br><br>
+
+Nombre usuario &nbsp;
+<input type="text" name="apellido" value="" size="20" maxlength="30">
+<br><br>
+Contraseña &nbsp;
+<input type="password" name="contrasena" value="" size="10" maxlength="10">
+
+<br><br>
+¿Cuáles son tus casas de terror favoritas? <br><br>
+<input type="checkbox" name="casa" value="Survival Maze"> Survival Maze <br>
+<input type="checkbox" name="casa" value="Cannibal"> Cannibal <br>
+<input type="checkbox" name="casa" value="McAbro"> McAbro <br>
+<input type="checkbox" name="casa" value="Dia de los muertos"> Día de los muertos <br>
+<input type="checkbox" name="casa" value="Hell Cell"> Hell Cell <br>
+<input type="checkbox" name="casa" value="Urbex"> Urbex <br>
+<br>
+¿Qué menú prefieres para la cena? <br><br>
+<input type="radio" name="menu" value="Sin preferencias" checked="checked"> Sin preferencias<br>
+<input type="radio" name="menu" value="Hamburguesa sangrienta con patatas"> Hamburguesa sangrienta con patatas<br>
+<input type="radio" name="menu" value="Sopa en caldero embrujado"> Sopa en caldero embrujado<br>
+<input type="radio" name="menu" value="Pasta con vomito de bruja"> Pasta con vómito de bruja<br>
+<input type="radio" name="menu" value="Calabaza exorcitada"> Calabaza exorcitada <br>
+<br>
+
+Número de Dni &nbsp;
+<input type="text" name="DNI" value="" size="9" maxlength="9">
+<br><br>
+Adjuntar foto cara DNI &nbsp; <input type="file" name="foto">
+<br><br>
+
+
+<input type="hidden" name="ubicacion" value="ubicacion-usuario">
+
+<input type="button" name="guardar" value="Guardar Cambios"> 
+<input type="reset" name="limpiar" value="Borrar datos del formulario">
+
+<br><br>
+
+
+	
+
+</form>
+
+
+</body>
+
+</html>
